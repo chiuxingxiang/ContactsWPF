@@ -1,0 +1,25 @@
+﻿<Window x:Class="Contacts.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Contacts"
+        mc:Ignorable="d"
+        Title="通讯录" Height="450" Width="800" WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="UserNameBox" Margin="379,156,293,269" TextWrapping="Wrap" Text="Q"  UndoLimit="101" Grid.ColumnSpan="3" />
+        <PasswordBox x:Name="PasswordBox" Margin="379,194,293,0"  Grid.ColumnSpan="3" VerticalAlignment="Top" Height="25"/>
+        <Label Content="用户名："  Margin="310,156,28,0" RenderTransformOrigin="-0.104,-0.419"  VerticalAlignment="Top"/>
+        <Label Content="密码："  Margin="321,194,29,0" VerticalAlignment="Top"/>
+        <Button x:Name="LogInButton" Content="登录"  Margin="340,252,339,168"  Click="LogInButton_Click" Grid.ColumnSpan="3" />
+        <Label Content="通讯录"  Margin="319,62,314,316"  FontSize="48" Grid.ColumnSpan="3" />
+        <Button x:Name="SignInButton" Content="注册"  Margin="340,287,339,133" Click="SignInButton_Click" Grid.ColumnSpan="3" />
+        <Button x:Name="ExitButton" Content="退出通讯录"  Margin="340,322,339,98"  Click="ExitButton_Click" Grid.ColumnSpan="3" />
+    </Grid>
+</Window>
